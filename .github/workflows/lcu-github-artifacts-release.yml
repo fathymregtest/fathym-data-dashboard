@@ -2,16 +2,16 @@ name: React Build/Release
 
 on:
   push:
-    branches: [main,integration]
+    branches: [main]
   pull_request:
-    branches: [main,integration]
+    branches: [main]
   workflow_dispatch:
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: main,integration
+  Branches: main
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm ci
